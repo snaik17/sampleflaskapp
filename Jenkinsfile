@@ -2,7 +2,7 @@ node {
     dir("/root/"){
     checkout scm
 
-    env.DOCKER_API_VERSION="1.23"
+    env.DOCKER_API_VERSION="1.37"
     appName = "default/flask-app"
     registryHost = "mycluster.icp:8500/"
     imageName = "${registryHost}${appName}:${env.BUILD_ID}"
